@@ -7,4 +7,9 @@ describe Cell do
     expect(cell.value).to eq " "
   end
 
+  it "knows when it has been filled with an X or O" do
+    cell = Cell.new
+    expect(cell.taken?).to eq true
+  end
+
 end
